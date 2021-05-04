@@ -1,0 +1,35 @@
+@import "../../index.scss";
+
+.CardDisplay {
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  transition: background-color 0.2s ease 0s;
+
+  @include items-at-end;
+
+  .CardDisplay__text {
+    overflow: hidden;
+    overflow-wrap: break-word;
+  }
+
+  .CardDisplay__btnGroup {
+    visibility: hidden;
+    @include items-at-end;
+  }
+
+  .CardDisplay__btn {
+    background: transparent;
+    border: none;
+    margin: 0;
+    outline: none;
+    font-size: medium;
+  }
+
+  &:hover .CardDisplay__btnGroup {
+    visibility: visible;
+  }
+}

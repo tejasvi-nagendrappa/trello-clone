@@ -1,0 +1,52 @@
+@import "./reset";
+html body [id="root"] {
+  margin: 0;
+  background: #708dc5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+@mixin items-at-end {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin text-area {
+  resize: none;
+  user-select: none;
+  outline: none;
+  width: 100%;
+  padding-right: 5px;
+  overflow: hidden;
+  border: 1px solid rgba(235, 223, 223, 0.856);
+  font: inherit;
+  font-weight: inherit;
+}
+
+@mixin add-cancel-buttons {
+  cursor: pointer;
+  box-shadow: 0 1px 0 0 #3f6f21;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 5px 10px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  outline: none;
+}
+
+.Btn__add {
+  background: #44c767;
+  @include add-cancel-buttons;
+}
+
+.Btn__cancel {
+  background: #fd3c3c;
+  @include add-cancel-buttons;
+}

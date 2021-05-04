@@ -1,0 +1,23 @@
+.AddNewColumn {
+  background: transparent;
+  min-height: 30px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  height: fit-content;
+  width: 300px;
+
+  .AddNewColumn__btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}

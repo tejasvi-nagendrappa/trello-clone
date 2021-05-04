@@ -1,0 +1,15 @@
+.AddNewCard {
+  padding: 5px 0px;
+
+  .AddNewCard__btn {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+  }
+
+  &:hover {
+    background-color: rgba(9, 45, 66, 0.13);
+    color: #17394d;
+    text-decoration: underline;
+  }
+}

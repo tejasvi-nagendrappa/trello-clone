@@ -1,0 +1,27 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files..
+
+# Editor files.
+.idea
+.vscode/chrome
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
+
+# ci
+report
+
+# misc
+.DS_Store
+
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+

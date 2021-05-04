@@ -1,0 +1,34 @@
+@import "../../index.scss";
+.ColumnDisplay {
+  font-weight: 600;
+  .ColumnDisplay--btnContainer {
+    display: flex;
+    position: absolute;
+    margin-left: 230px;
+    visibility: hidden;
+  }
+
+  &:hover {
+    .ColumnDisplay--btnContainer {
+      visibility: visible;
+    }
+  }
+
+  .ColumnDisplay__btn {
+    background: transparent;
+    border: none;
+    margin: 0;
+    outline: none;
+    font-size: large;
+  }
+
+  .ColumnDisplay__text {
+    overflow: hidden;
+    padding-bottom: 20px;
+    height: fit-content;
+    padding-right: 80px;
+    min-height: 20px;
+    overflow-wrap: break-word;
+  }
+  @include items-at-end;
+}
