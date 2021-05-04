@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import { noop } from 'lodash';
 import PropTypes from 'prop-types';
 import TextAreaInput from '../TextAreaInput';
 import Button from '../Button';
@@ -115,6 +116,7 @@ const AddNewItem = ({
   return (
     <div
       className={isEditMode ? 'AddNewItem' : className}
+      onClick={isEditMode ? noop : toggleEditMode }
     >
       {
         isEditMode

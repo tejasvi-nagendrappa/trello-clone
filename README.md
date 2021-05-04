@@ -7,3 +7,5 @@ This is an Simple Version of Trello App built with Plain React which is bootstra
 1. Checkout this repo
 2. Run `yarn install`
 3. Run `yarn start`
+
+Application will run at port 3000.
